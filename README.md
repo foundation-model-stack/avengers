@@ -12,7 +12,7 @@ We put together a brief roadmap on studying these architectures and welcome inpu
 ## Models
 
 - Llama-3 (Transformers baseline)
-- Mamba-2 (with support for hybrid Mamba - mix of Mamba layers and Attn layers)
+- [Mamba-2](https://arxiv.org/pdf/2312.00752) (with support for hybrid Mamba - mix of Mamba layers and Attn layers)
 - [Telescoping Cache Llama-3](docs/telescoping-cache.md) (constant-cache-size implementation of Transformers)
 
 ## Installation
@@ -51,5 +51,18 @@ for model training
 
 modify [train_llama.sh](train_llama.sh) / [train_mamba.sh](train_mamba.sh) / 
 [train_tele.sh](train_tele.sh) to run the training.
+
+
+## Roadmap
+
+The current plan for experiments is that, for each model type, we will run
+the followings in order:
+
+1. 3b run with 300b tokens (cc only, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu))
+2. 3b run with 1T tokens (mixed data, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) + [Dolma v1.7](https://huggingface.co/datasets/allenai/dolma))
+3. 7b run with 2T-4T tokens (TBD)
+
+models will be [evaluated](https://github.com/EleutherAI/lm-evaluation-harness) and reported back in this repo.
+
 
 ## Models available -- COMING SOON!
