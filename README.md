@@ -7,15 +7,7 @@ use constant cache size and thus improve inference efficiencies.
 We are developing this in the open using data available in the community with the primary data sources from [Dolma](https://allenai.github.io/dolma/) and [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu). The checkpoints will be made available to the community as well for further studies. So far, we have been in initial discussions with Minjia Zhang and Cherith Mendes from UIUC, Tri Dao from Princeton, and Albert Gu from CMU. Anyone interested, please reach out to Raghu Ganti (rganti@us.ibm.com).
 
 ## Roadmap
-We put together a brief roadmap on studying these architectures and welcome input on suggestions, which we will take into account when we run the jobs.
-
-The current plan is that, for each model variant, the followings will be run in order:
-
-1. 3b run with 300b tokens (cc only, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu))
-2. 3b run with 1T tokens (mixed data, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) + [Dolma v1.7](https://huggingface.co/datasets/allenai/dolma))
-3. 7b run with 2T-4T tokens (TBD)
-
-models will be [evaluated](https://github.com/EleutherAI/lm-evaluation-harness) and reported back in this repo.
+We put together a brief [roadmap](Roadmap.md) on studying these architectures and welcome input on suggestions, which we will take into account when we run the jobs.
 
 ## Models
 
