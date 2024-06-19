@@ -1,7 +1,13 @@
 # Avengers!
 
 This repo serves as a workshop repo to experiment on Transformers-alternatives that 
-use constant cache size.
+use constant cache size and thus improve inference efficiencies.
+
+## Teaming
+We are developing this in the open using data available in the community with the primary data sources from [Dolma](https://allenai.github.io/dolma/) and [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu). The checkpoints will be made available to the community as well for further studies. So far, we have been in initial discussions with Minjia Zhang and Cherith Mendes from UIUC, Tri Dao from Princeton, and Albert Gu from CMU. Anyone interested, please reach out to Raghu Ganti (rganti@us.ibm.com).
+
+## Roadmap
+We put together a brief roadmap on studying these architectures and welcome input on suggestions, which we will take into account when we run the jobs.
 
 ## Models
 
@@ -45,3 +51,5 @@ for model training
 
 modify [train_llama.sh](train_llama.sh) / [train_mamba.sh](train_mamba.sh) / 
 [train_tele.sh](train_tele.sh) to run the training.
+
+## Models available -- COMING SOON!
