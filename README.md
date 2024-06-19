@@ -9,6 +9,14 @@ We are developing this in the open using data available in the community with th
 ## Roadmap
 We put together a brief roadmap on studying these architectures and welcome input on suggestions, which we will take into account when we run the jobs.
 
+The current plan is that, for each model variant, the followings will be run in order:
+
+1. 3b run with 300b tokens (cc only, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu))
+2. 3b run with 1T tokens (mixed data, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) + [Dolma v1.7](https://huggingface.co/datasets/allenai/dolma))
+3. 7b run with 2T-4T tokens (TBD)
+
+models will be [evaluated](https://github.com/EleutherAI/lm-evaluation-harness) and reported back in this repo.
+
 ## Models
 
 - Llama-3 (Transformers baseline)
@@ -51,18 +59,6 @@ for model training
 
 modify [train_llama.sh](train_llama.sh) / [train_mamba.sh](train_mamba.sh) / 
 [train_tele.sh](train_tele.sh) to run the training.
-
-
-## Roadmap
-
-The current plan for experiments is that, for each model type, we will run
-the followings in order:
-
-1. 3b run with 300b tokens (cc only, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu))
-2. 3b run with 1T tokens (mixed data, using [FineWeb-Edu](https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu) + [Dolma v1.7](https://huggingface.co/datasets/allenai/dolma))
-3. 7b run with 2T-4T tokens (TBD)
-
-models will be [evaluated](https://github.com/EleutherAI/lm-evaluation-harness) and reported back in this repo.
 
 
 ## Models available -- COMING SOON!
