@@ -9,6 +9,12 @@ We are developing this in the open using data available in the community with th
 ## Roadmap
 We put together a brief [roadmap](Roadmap.md) on studying these architectures and welcome input on suggestions, which we will take into account when we run the jobs.
 
+## Access
+For access to the model checkpoints and WANDB trackers, please open an [issue](https://github.com/foundation-model-stack/avengers/issues/new?assignees=raghukiran1224&labels=&projects=&template=access.md&title=).
+
+## Status
+* 07/08/2024: Current model being trained: Mamba v2 3B to 2T tokens on Dolma data
+
 ## Models
 
 - Llama-3 (Transformers baseline)
