@@ -3,7 +3,7 @@ name: Access
 about: For access to model checkpoints
 title: ''
 labels: ''
-assignees: raghukiran1224
+assignees: raghukiran1224, minjiazhang
 
 ---
 
@@ -12,4 +12,5 @@ While we are working toward making things publicly available, in the interim, we
 Fill out the following information for access:
 1. Name
 2. Affiliation
-3. HuggingFace id
+3. HuggingFace id for model checkpoints
+4. WANDB id for tracking runs
