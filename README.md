@@ -13,6 +13,7 @@ We put together a brief [roadmap](Roadmap.md) on studying these architectures an
 For access to the model checkpoints and WANDB trackers, please open an [issue](https://github.com/foundation-model-stack/avengers/issues/new?assignees=raghukiran1224&labels=&projects=&template=access.md&title=).
 
 ## Status
+* 07/20/2024: 3B Model is done 2T tokens and training 9.5B model on the same data mix
 * 07/08/2024: Current model being trained: Mamba v2 3B to 2T tokens on Dolma data
 
 ## Models
